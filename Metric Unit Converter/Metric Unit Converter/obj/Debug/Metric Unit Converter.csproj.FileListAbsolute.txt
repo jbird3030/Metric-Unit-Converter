@@ -1,0 +1,10 @@
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\bin\Debug\Metric Unit Converter.exe.config
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\bin\Debug\Metric Unit Converter.exe
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\bin\Debug\Metric Unit Converter.pdb
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\obj\Debug\Metric Unit Converter.csproj.AssemblyReference.cache
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\obj\Debug\Metric_Unit_Converter.Form1.resources
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\obj\Debug\Metric_Unit_Converter.Properties.Resources.resources
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\obj\Debug\Metric Unit Converter.csproj.GenerateResource.cache
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\obj\Debug\Metric Unit Converter.csproj.CoreCompileInputs.cache
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\obj\Debug\Metric Unit Converter.exe
+C:\Users\jbird\Desktop\Personal Projects\Metric Unit Converter\Metric Unit Converter\obj\Debug\Metric Unit Converter.pdb
