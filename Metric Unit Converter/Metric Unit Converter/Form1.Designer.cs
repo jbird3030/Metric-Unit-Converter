@@ -38,11 +38,24 @@ namespace Metric_Unit_Converter
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonFtoM = new System.Windows.Forms.Button();
             this.buttonMToF = new System.Windows.Forms.Button();
+            this.buttonPToK = new System.Windows.Forms.Button();
+            this.buttonKToP = new System.Windows.Forms.Button();
+            this.buttonGToL = new System.Windows.Forms.Button();
+            this.buttonLToG = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(160, 470);
+            this.buttonClose.Location = new System.Drawing.Point(191, 523);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
             this.buttonClose.TabIndex = 1;
@@ -52,7 +65,7 @@ namespace Metric_Unit_Converter
             // 
             // buttonFToC
             // 
-            this.buttonFToC.Location = new System.Drawing.Point(41, 121);
+            this.buttonFToC.Location = new System.Drawing.Point(40, 33);
             this.buttonFToC.Name = "buttonFToC";
             this.buttonFToC.Size = new System.Drawing.Size(225, 28);
             this.buttonFToC.TabIndex = 2;
@@ -78,7 +91,7 @@ namespace Metric_Unit_Converter
             // 
             // outputValue
             // 
-            this.outputValue.Location = new System.Drawing.Point(41, 399);
+            this.outputValue.Location = new System.Drawing.Point(41, 479);
             this.outputValue.Name = "outputValue";
             this.outputValue.ReadOnly = true;
             this.outputValue.Size = new System.Drawing.Size(225, 20);
@@ -86,7 +99,7 @@ namespace Metric_Unit_Converter
             // 
             // buttonCToF
             // 
-            this.buttonCToF.Location = new System.Drawing.Point(41, 169);
+            this.buttonCToF.Location = new System.Drawing.Point(40, 93);
             this.buttonCToF.Name = "buttonCToF";
             this.buttonCToF.Size = new System.Drawing.Size(225, 30);
             this.buttonCToF.TabIndex = 7;
@@ -96,7 +109,7 @@ namespace Metric_Unit_Converter
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(41, 470);
+            this.buttonClear.Location = new System.Drawing.Point(41, 523);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 8;
@@ -106,9 +119,9 @@ namespace Metric_Unit_Converter
             // 
             // buttonFtoM
             // 
-            this.buttonFtoM.Location = new System.Drawing.Point(41, 218);
+            this.buttonFtoM.Location = new System.Drawing.Point(40, 36);
             this.buttonFtoM.Name = "buttonFtoM";
-            this.buttonFtoM.Size = new System.Drawing.Size(225, 23);
+            this.buttonFtoM.Size = new System.Drawing.Size(225, 30);
             this.buttonFtoM.TabIndex = 9;
             this.buttonFtoM.Text = "Feet to Meters";
             this.buttonFtoM.UseVisualStyleBackColor = true;
@@ -116,30 +129,124 @@ namespace Metric_Unit_Converter
             // 
             // buttonMToF
             // 
-            this.buttonMToF.Location = new System.Drawing.Point(41, 267);
+            this.buttonMToF.Location = new System.Drawing.Point(40, 91);
             this.buttonMToF.Name = "buttonMToF";
-            this.buttonMToF.Size = new System.Drawing.Size(225, 23);
+            this.buttonMToF.Size = new System.Drawing.Size(225, 30);
             this.buttonMToF.TabIndex = 10;
             this.buttonMToF.Text = "Meters to Feet";
             this.buttonMToF.UseVisualStyleBackColor = true;
             this.buttonMToF.Click += new System.EventHandler(this.buttonMToF_Click);
+            // 
+            // buttonPToK
+            // 
+            this.buttonPToK.Location = new System.Drawing.Point(40, 33);
+            this.buttonPToK.Name = "buttonPToK";
+            this.buttonPToK.Size = new System.Drawing.Size(225, 30);
+            this.buttonPToK.TabIndex = 11;
+            this.buttonPToK.Text = "Pounds to Kilograms";
+            this.buttonPToK.UseVisualStyleBackColor = true;
+            // 
+            // buttonKToP
+            // 
+            this.buttonKToP.Location = new System.Drawing.Point(40, 93);
+            this.buttonKToP.Name = "buttonKToP";
+            this.buttonKToP.Size = new System.Drawing.Size(225, 30);
+            this.buttonKToP.TabIndex = 12;
+            this.buttonKToP.Text = "Kilograms to Pounds";
+            this.buttonKToP.UseVisualStyleBackColor = true;
+            // 
+            // buttonGToL
+            // 
+            this.buttonGToL.Location = new System.Drawing.Point(40, 36);
+            this.buttonGToL.Name = "buttonGToL";
+            this.buttonGToL.Size = new System.Drawing.Size(225, 30);
+            this.buttonGToL.TabIndex = 13;
+            this.buttonGToL.Text = "Gallons to Liters";
+            this.buttonGToL.UseVisualStyleBackColor = true;
+            // 
+            // buttonLToG
+            // 
+            this.buttonLToG.Location = new System.Drawing.Point(40, 91);
+            this.buttonLToG.Name = "buttonLToG";
+            this.buttonLToG.Size = new System.Drawing.Size(225, 30);
+            this.buttonLToG.TabIndex = 14;
+            this.buttonLToG.Text = "Liters to Gallons";
+            this.buttonLToG.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(38, 446);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 13);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Converted Value:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.buttonLToG);
+            this.groupBox1.Controls.Add(this.buttonGToL);
+            this.groupBox1.Location = new System.Drawing.Point(438, 291);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(300, 150);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Volume";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.buttonKToP);
+            this.groupBox2.Controls.Add(this.buttonPToK);
+            this.groupBox2.Location = new System.Drawing.Point(438, 132);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(300, 150);
+            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Weight";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.buttonMToF);
+            this.groupBox3.Controls.Add(this.buttonFtoM);
+            this.groupBox3.Location = new System.Drawing.Point(41, 291);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(300, 150);
+            this.groupBox3.TabIndex = 22;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Distance";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.buttonFToC);
+            this.groupBox4.Controls.Add(this.buttonCToF);
+            this.groupBox4.Location = new System.Drawing.Point(41, 132);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(300, 150);
+            this.groupBox4.TabIndex = 23;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Temperature";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 574);
-            this.Controls.Add(this.buttonMToF);
-            this.Controls.Add(this.buttonFtoM);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonCToF);
             this.Controls.Add(this.outputValue);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputValue);
-            this.Controls.Add(this.buttonFToC);
             this.Controls.Add(this.buttonClose);
             this.Name = "Form1";
             this.Text = "Metric Unit Converter";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,6 +262,15 @@ namespace Metric_Unit_Converter
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonFtoM;
         private System.Windows.Forms.Button buttonMToF;
+        private System.Windows.Forms.Button buttonPToK;
+        private System.Windows.Forms.Button buttonKToP;
+        private System.Windows.Forms.Button buttonGToL;
+        private System.Windows.Forms.Button buttonLToG;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 
